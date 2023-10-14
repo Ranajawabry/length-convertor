@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input.form-control{
+    margin-top: 1px !important;
+}
+.box{
+    box-shadow: 1px 4px 7px black;
+    width: 50%; 
+    min-width:  500px !important;
+}
