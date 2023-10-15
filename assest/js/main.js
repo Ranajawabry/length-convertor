@@ -7,14 +7,14 @@ const inch = document.getElementById('inch');
 const yard = document.getElementById('yard');
 const mile = document.getElementById('mile');
 
-
+console.log(mile.dataset.mesurment)
 
 
 
 const convertTother =(input)=>{
     console.log(input.value);
-    console.log(input.id);
-    if(input.id === 'meter'){
+    console.log(input.dataset.mesurment);
+    if(input.dataset.mesurment === 'meter'){
         console.log("yess")
         cm.value=eval('input.value * 100');
         kilometer.value=eval('input.value / 1000');
@@ -26,7 +26,7 @@ const convertTother =(input)=>{
 
 
     }
-    else if(input.id === 'kilometer'){
+    else if(input.dataset.mesurment === 'kilometer'){
         console.log('nooo')
         cm.value=eval('input.value * 100000');
         meter.value=eval('input.value * 1000');
@@ -35,7 +35,7 @@ const convertTother =(input)=>{
         yard.value=eval('input.value *  1.0936 * 1000')
         mile.value=eval('input.value *  0.0006214 * 1000')
     }
-    else if(input.id === 'cm'){
+    else if(input.dataset.mesurment === 'cm'){
         console.log('nooo')
         kilometer.value=eval('input.value / 100000');
         meter.value=eval('input.value / 100');
@@ -44,7 +44,7 @@ const convertTother =(input)=>{
         yard.value=eval('input.value *  1.0936 / 100')
         mile.value=eval('input.value *  0.0006214 / 100')
     }
-    else if(input.id === 'feet'){
+    else if(input.dataset.mesurment === 'feet'){
         console.log('nooo')
         kilometer.value=eval('input.value * 0.0003048 ');
         meter.value=eval('input.value * 0.3048 ');
@@ -53,7 +53,7 @@ const convertTother =(input)=>{
         yard.value=eval('input.value *  0.3333 ')
         mile.value=eval('input.value *  0.0001894 ')
     }
-    else if(input.id === 'inch'){
+    else if(input.dataset.mesurment === 'inch'){
         console.log('nooo')
         kilometer.value=eval('input.value * 0.0003048 ');
         meter.value=eval('input.value * 0.0254 ');
@@ -62,7 +62,7 @@ const convertTother =(input)=>{
         yard.value=eval('input.value *  0.02778  ')
         mile.value=eval('input.value *  0.0.00001578  ')
     }
-    else if(input.id === 'yard'){
+    else if(input.dataset.mesurment === 'yard'){
         console.log('nooo')
         kilometer.value=eval('input.value * 0.0009144  ');
         meter.value=eval('input.value * 0.9144  ');
@@ -71,7 +71,7 @@ const convertTother =(input)=>{
         inch.value=eval('input.value *  36.0003658 ')
         mile.value=eval('input.value *  0.0005682   ')
     }
-    else if(input.id === 'mile'){
+    else if(input.dataset.mesurment === 'mile'){
         console.log('nooo')
         kilometer.value=eval('input.value *  1.6093  ');
         meter.value=eval('input.value * 0.9144  ');

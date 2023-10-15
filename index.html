@@ -9,23 +9,23 @@
     <link rel="stylesheet" href="assest/css/style.css">
 </head>
 <body>
-    <div class="vh-100 bg-secondary d-flex justify-content-center align-items-center">
+    <div class="vh-100 bg-secondary d-flex justify-content-center align-items-center ">
 
        
 
-        <div class="box p-5 border rounded">
+        <div class="box px-5 py-2 border rounded">
             <h2 class="text-capitalize fw-bolder mb-4">length convertor</h2>
             <div class="row g-4 align-items-center mb-3">
                 
                   <label for="meters" class=" fs-4 fw-bolder">Meter:</label>
 
-                  <input type="number" id="meter" class="form-control" aria-describedby="passwordHelpInline" oninput="convertTother(this)">
+                  <input type="number" id="meter" class="form-control" data-mesurment="meter"  oninput="convertTother(this)">
               
               </div>
               <div class="row g-4 align-items-center mb-3">
                
                   <label for="cm" class=" fs-4 fw-bolder">CM:</label>
-                  <input type="number" id="cm" class="form-control" aria-describedby="passwordHelpInline" oninput="convertTother(this)">
+                  <input type="number" id="cm" class="form-control" data-mesurment="cm"  oninput="convertTother(this)">
                
               </div>
               <div class="row g-4 align-items-center mb-3">
@@ -33,35 +33,35 @@
                   <label for="kilometer" class="col-form-label fs-4 fw-bolder">Kilometers:</label>
                 
                
-                  <input type="number" id="kilometer" class="form-control" aria-describedby="passwordHelpInline" oninput="convertTother(this)">
+                  <input type="number" id="kilometer" class="form-control" data-mesurment="kilometer"  oninput="convertTother(this)">
                
               </div>
               <div class="row g-4 align-items-center mb-3">
                 
                   <label for="inch" class="col-form-label fs-4 fw-bolder">Inch:</label>
                 
-                  <input type="number" id="inch" class="form-control" aria-describedby="passwordHelpInline" oninput="convertTother(this)">
+                  <input type="number" id="inch" class="form-control"  data-mesurment="inch" oninput="convertTother(this)">
               
               </div>
             <div class="row g-4 align-items-center">
                 
                   <label for="feet" class="col-form-label fs-4 fw-bolder">Feet:</label>
               
-                  <input type="number" id="feet" class="form-control" aria-describedby="passwordHelpInline" oninput="convertTother(this)">
+                  <input type="number" id="feet" class="form-control" data-mesurment="feet"  oninput="convertTother(this)">
                
               </div>
               <div class="row g-4 align-items-center">
                 
                 <label for="yard" class="col-form-label fs-4 fw-bolder">Yard:</label>
             
-                <input type="number" id="yard" class="form-control" aria-describedby="passwordHelpInline" oninput="convertTother(this)">
+                <input type="number" id="yard" class="form-control" data-mesurment="yard"  oninput="convertTother(this)">
              
             </div>
-            <div class="row g-4 align-items-center">
+            <div class="row g-4 align-items-center mb-3">
                 
                 <label for="mile" class="col-form-label fs-4 fw-bolder">Mile:</label>
             
-                <input type="number" id="mile" class="form-control" aria-describedby="passwordHelpInline" oninput="convertTother(this)">
+                <input type="number" id="mile" class="form-control" data-mesurment="mile"  oninput="convertTother(this)">
              
             </div>
 
